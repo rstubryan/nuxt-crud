@@ -2,7 +2,7 @@
 import { ref, onMounted } from "vue";
 import { useFlowbite } from "~/composables/useFlowbite";
 import { initFlowbite } from "flowbite";
-import Container from "../../components/templates/content/container.vue";
+import Auth from "../../layouts/auth.vue";
 
 const email = ref("");
 const password = ref("");
@@ -45,7 +45,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <Container>
+  <Auth>
     <section
       class="max-w-lg w-full p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
     >
@@ -77,5 +77,5 @@ onMounted(() => {
         <UiButton type="submit" class="w-full">Submit</UiButton>
       </form>
     </section>
-  </Container>
+  </Auth>
 </template>
