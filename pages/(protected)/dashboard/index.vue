@@ -1,7 +1,11 @@
 <script setup>
 import { ref, watch } from "vue";
-import Container from "../../components/templates/content/container.vue";
-import Button from "../../components/ui/button.vue";
+import Container from "../../../components/templates/content/container.vue";
+import Button from "../../../components/ui/button.vue";
+
+useHead({
+  title: "Dashboard",
+});
 
 const config = useRuntimeConfig();
 const tokenCookie = useCookie("auth_token");

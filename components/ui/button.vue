@@ -12,6 +12,7 @@ const defaultClasses =
 
 <template>
   <button
+    v-bind="$attrs"
     :type="type"
     :class="`font-medium rounded-lg text-sm px-5 py-2.5 ${defaultClasses}`"
   >
